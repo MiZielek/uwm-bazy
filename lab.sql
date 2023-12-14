@@ -72,3 +72,30 @@ DELETE from izba where nazwa_izby = 'spiżarnia';
 
 DROP table izba;
 
+
+### PDF 5
+
+#1
+DELETE from postac WHERE wiek IN (select wiek from tabela order by wiek desc limit 2);
+### usuwanie klucza głównego - brak
+
+#2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#select count(*) from kreatura;
+#select count(distinct id_uczestnika) from uczestnicy;
