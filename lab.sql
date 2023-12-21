@@ -80,11 +80,48 @@ DELETE from postac WHERE wiek IN (select wiek from tabela order by wiek desc lim
 ### usuwanie klucza głównego - brak
 
 #2
+ALTER TABLE postac
+ADD COLUMN pesel INT(11),
+ADD PRIMARY KEY (pesel);
+
+ALTER TABLE postac MODIFY COLUMN rodzaj ENUM('wiking', 'ptak', 'kobieta', 'syrena');
+INSERT INTO postac (nazwa, rodzaj, data_ur, wiek) VALUES
+	('Gertruda Nieszczera', 'syrena', '930-01-01', 28);
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#5
+#select datediff(now(), '2023-12-01');
+#select datediff('2023-12-01', now());
 
 
 
